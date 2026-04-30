@@ -5,32 +5,20 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<h2>2025</h2>
+<ul>
+  <li><strong>Junteng Liu</strong>, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He. <em>SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond</em>. Arxiv, 2025. First author.</li>
+  <li><strong>Junteng Liu</strong>, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He. <em>On the Perception Bottleneck of VLMs for Chart Understanding</em>. Arxiv, 2025. First author.</li>
+</ul>
 
-{% include base_path %}
+<h2>2024</h2>
+<ul>
+  <li><strong>Junteng Liu</strong>, Shiqi Chen, Yu Cheng, Junxian He. <em>On the Universal Truthfulness Hyperplane Inside LLMs</em>. EMNLP 2024. First author.</li>
+  <li>Shiqi Chen, Miao Xiong, <strong>Junteng Liu</strong>, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He. <em>In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation</em>. ICML 2024.</li>
+</ul>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+<h2>2023</h2>
+<ul>
+  <li>Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, <strong>Junteng Liu</strong>, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He. <em>C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models</em>. NeurIPS 2023.</li>
+  <li>Jinghan Zhang, Shiqi Chen, <strong>Junteng Liu</strong>, Junxian He. <em>Composing Parameter-Efficient Modules with Arithmetic Operations</em>. NeurIPS 2023.</li>
+</ul>
